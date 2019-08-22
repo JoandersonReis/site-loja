@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+.nav {
+    display: flex;
+    background-color: rgb(102, 3, 3);
+    justify-content: space-between;
+    padding: 20px 20px;
+}
+
+.logo a{
+    text-decoration: none;
+    font-family: sans-serif;
+    color: white;
+}
+
+/* Main */
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+
+/* Produtos */
+.menu {
+    margin: 30px auto;
+    display: flex;
+    max-width: 800px;
+    flex-wrap: wrap;
+    border: 1px solid rgb(214, 211, 211);
+    padding: 30px;
+}
+.menu div {
+    flex: 1 1 200px;
+    margin: 20px;
+}
+
+.buy {
+    padding: 7px 10px;
+    color: white;
+    background-color: rgb(26, 189, 26);
+    border: none;
+    font-size: 13pt;
+    font-family: sans-serif;
+    border-radius: 1px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 70px;
+    transition: 0.3s ease;
+}
+
+.buy:hover {
+    background-color: rgb(9, 209, 9);
+}
+
+@media(max-width: 500px) {
+    .menu {
+        display: block;
+    }
+    .produto img {
+        margin: 0 auto;
+    }
+    .selected {
+        margin: 0 auto;
+        width: 100%;
+    }
+}
+
+
+/* Itens Selecionados */
+.selected {
+    flex: 1 1 200px;
+    margin-left: 30px;
+    padding: 30px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    border: 1px solid rgb(214, 211, 211);
+    min-width: 200px;
+    width: 200px;
+    height: 670px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+.itemSelected {
+    margin: 10px auto;
+    text-align: center;
+    border: 1px solid gray;
+    padding: 30px;
+    background-color: rgb(235, 231, 231);
+}
+.total {
+    text-align: center;
+    border: 1px solid gray;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.selected h1 {
+    text-align: center;
+}
+.remove {
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 5px;
+    background-color: rgb(240, 52, 52);
+    border: none;
+    border-radius: 1px;
+    font-size: 12pt;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.remove:hover {
+    background-color: rgb(255, 5, 5);
+}
+
