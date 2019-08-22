@@ -29,6 +29,7 @@
     let btns = doc.querySelectorAll(".buy")
     window.btns = btns
 
+    // Adiciona os itens ao carrinho
     function addItemSelected(event) {
         let itemSelected = doc.createElement("div")
         let price = event.target.dataset.price
@@ -56,6 +57,7 @@
 
         let getRemoves = doc.querySelectorAll(".remove")
 
+        // Percorre todos os botões de remove e verifica se foi clickado
         for(let i=0; i<getRemoves.length; i++) {
             getRemoves[i].addEventListener("click", function(event){
                 let priceProduct = event.target.dataset.price
@@ -76,7 +78,7 @@
         }
         cont++;
     }
-
+    // Percorre os botões e Verifica se clickou em comprar
     for(let i=0; i<btns.length; i++) {
         btns[i].addEventListener("click", addItemSelected)
     }

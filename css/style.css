@@ -3,6 +3,8 @@
     margin: 0;
     font-family: sans-serif;
 }
+
+/* Header */
 .nav {
     display: flex;
     background-color: rgb(102, 3, 3);
